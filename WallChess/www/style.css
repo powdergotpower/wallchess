@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(120deg, #1c1c1c, #3d3d3d);
+  color: white;
+}
+
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#start-screen h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4500;
+}
