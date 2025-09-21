@@ -14,7 +14,7 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 
-    <!-- Android 12+ native splash -->
+    <!-- Android 12+ native splash screen -->
     <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash/logo.png" />
     <preference name="AndroidWindowSplashScreenBackgroundColor" value="#252525" />
     <preference name="AndroidWindowSplashScreenScaleType" value="CENTER_CROP" />
@@ -25,9 +25,9 @@
         <preference name="SplashScreen" value="screen" />
         <preference name="SplashScreenDelay" value="4000" />
         <preference name="FadeSplashScreenDuration" value="1000" />
-        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashMaintainAspectRatio" value="false" />
         <preference name="ShowSplashScreenSpinner" value="false" />
-        <splash src="resources/splash/logo.png" density="port"/>
+        <splash src="resources/splash/logo.png" density="port" />
     </platform>
 
 </widget>

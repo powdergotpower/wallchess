@@ -7,18 +7,16 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="splash-container">
-    <img src="logo.png" alt="WallChess Logo" class="logo">
+    <img src="logo.png" class="logo" alt="WallChess Logo">
     <div class="splash-text">WallChess</div>
-</div>
 
-<script>
-window.onload = function() {
-    // Redirect to main screen after 3 seconds
-    setTimeout(() => {
-        window.location.href = "../main/main.html"; // adjust path to your main screen
-    }, 3000);
-};
-</script>
+    <script>
+        // Redirect to main page after 3 seconds
+        window.onload = function() {
+            setTimeout(() => {
+                window.location.href = "../main/main.html"; // adjust this path to your main page
+            }, 3000);
+        };
+    </script>
 </body>
 </html>

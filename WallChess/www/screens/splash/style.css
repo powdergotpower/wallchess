@@ -4,22 +4,22 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #252525;
+    background-color: #252525; /* your dark brown */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* Logo animation and sizing */
+/* Logo */
 .logo {
-    width: 90%;       /* almost full width */
-    max-width: 1080px;
+    width: 90%;           /* logo can take most of the screen width */
+    max-width: 1080px;    /* prevents over-stretch on big screens */
     opacity: 0;
     animation: fadeInGlow 2s forwards;
 }
 
-/* Glow + fade-in */
+/* Glow effect + fade-in */
 @keyframes fadeInGlow {
     0% {
         opacity: 0;
@@ -33,7 +33,7 @@ html, body {
     }
 }
 
-/* Optional splash text */
+/* Splash text (optional) */
 .splash-text {
     color: white;
     font-size: 3em;
