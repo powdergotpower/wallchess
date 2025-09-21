@@ -13,11 +13,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;
+        background-color: #252525; /* dark brown */
     }
 
     #logo {
-        width: 200px;
+        max-width: 80%; /* scales nicely on all screens */
+        height: auto;
         opacity: 0;
         animation: fadeIn 2s forwards;
     }
@@ -33,11 +34,9 @@
 
 <script>
     window.onload = function() {
-        const logo = document.getElementById('logo');
-        // logo fade-in is handled by CSS
         setTimeout(() => {
-            window.location.href = '../firstscreen/firstscreen.html'; // go to next screen
-        }, 4000);
+            window.location.href = '../index.html'; // change if your main page is somewhere else
+        }, 4000); // 4 seconds before moving to next page
     };
 </script>
 </body>
