@@ -1,11 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.wallchess" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.wallchess" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
     <name>WallChess</name>
-    <description>Sample Apache Cordova App</description>
+    <description>WallChess Game App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
+
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <!-- Splash screen preferences -->
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+
+    <!-- Splash images for different Android densities -->
+    <platform name="android">
+        <splash src="resources/splash/splash-ldpi.png" density="ldpi" />
+        <splash src="resources/splash/splash-mdpi.png" density="mdpi" />
+        <splash src="resources/splash/splash-hdpi.png" density="hdpi" />
+        <splash src="resources/splash/splash-xhdpi.png" density="xhdpi" />
+        <splash src="resources/splash/splash-xxhdpi.png" density="xxhdpi" />
+        <splash src="resources/splash/splash-xxxhdpi.png" density="xxxhdpi" />
+    </platform>
+
 </widget>
