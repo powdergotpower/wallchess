@@ -14,7 +14,7 @@
     <allow-intent href="https://*/*" />
 
     <!-- Splash screen preferences -->
-    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="4000" />
     <preference name="FadeSplashScreenDuration" value="1000" />
     <preference name="SplashMaintainAspectRatio" value="true" />
