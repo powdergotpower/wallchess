@@ -4,43 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WallChess Splash</title>
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #252525; /* Dark brown background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  #logo {
-    max-width: 90%; /* Free size, almost full width */
-    max-height: 90%;
-    opacity: 0;
-    animation: fadeInGlow 2s forwards;
-  }
-
-  @keyframes fadeInGlow {
-    0% { opacity: 0; transform: scale(0.9); filter: drop-shadow(0 0 0px white);}
-    50% { opacity: 0.7; filter: drop-shadow(0 0 10px white);}
-    100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 20px white);}
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img id="logo" src="logo.png" alt="WallChess Logo">
+    <img src="logo.png" class="logo" alt="WallChess Logo">
+    <div class="splash-text">WallChess</div>
 
-  <script>
-    window.onload = function() {
-      // Wait 3 seconds after fade-in
-      setTimeout(() => {
-        window.location.href = "../main/main.html"; // Adjust to your first screen
-      }, 3000);
-    };
-  </script>
+<script>
+    // Redirect to main page after 3 seconds
+    setTimeout(() => {
+        window.location.href = "../main/main.html"; // adjust path to your main page
+    }, 3000);
+</script>
 </body>
 </html>

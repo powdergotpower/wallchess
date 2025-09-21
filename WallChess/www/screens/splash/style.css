@@ -11,15 +11,15 @@ html, body {
     flex-direction: column;
 }
 
-/* Logo */
+/* Logo animation and sizing */
 .logo {
-    width: 90%; /* logo takes almost full width, adjusts freely */
-    max-width: 1080px; /* prevents it from going crazy on big screens */
+    width: 90%;       /* almost full width */
+    max-width: 1080px;
     opacity: 0;
     animation: fadeInGlow 2s forwards;
 }
 
-/* Glow effect + fade-in */
+/* Glow + fade-in */
 @keyframes fadeInGlow {
     0% {
         opacity: 0;
@@ -33,7 +33,7 @@ html, body {
     }
 }
 
-/* Splash text (optional) */
+/* Optional splash text */
 .splash-text {
     color: white;
     font-size: 3em;
