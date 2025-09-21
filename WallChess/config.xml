@@ -17,11 +17,11 @@
     <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash/logo.png" />
     <preference name="AndroidWindowSplashScreenBackgroundColor" value="#252525" />
     <preference name="AndroidWindowSplashScreenScaleType" value="CENTER_CROP" />
-    <preference name="AndroidWindowSplashScreenDuration" value="3000" />
+    <preference name="AndroidWindowSplashScreenDuration" value="4000" />
 
     <!-- Legacy splash support (Android < 12) -->
     <platform name="android">
-        <splash src="resources/splash/logo.png" density="port-xxxhdpi" />
+        <splash src="resources/splash/logo.png" density="port-hdpi" />
     </platform>
 
 </widget>
