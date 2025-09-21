@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WallChess Splash</title>
-    <style>
-        /* Full-screen container */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff; /* Background color for splash */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WallChess Splash</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
 
-        /* Logo image */
-        #logo {
-            width: 200px; /* Adjust size as needed */
-            opacity: 0;
-            animation: fadeIn 2s forwards; /* Fade in for 2 seconds */
-        }
+    #logo {
+        width: 200px;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
 
-        /* Fade-in animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.8); }
-            to { opacity: 1; transform: scale(1); }
-        }
-    </style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+</style>
 </head>
 <body>
-    <img id="logo" src="logo.png" alt="WallChess Logo">
+<img id="logo" src="logo.png" alt="WallChess Logo">
 
-    <script>
-        document.addEventListener('deviceready', function() {
-            // Show Cordova splash screen if plugin is installed
-            if (navigator.splashscreen) {
-                navigator.splashscreen.show();
-            }
-
-            // After 4 seconds, hide splash and go to first screen
-            setTimeout(function() {
-                if (navigator.splashscreen) {
-                    navigator.splashscreen.hide();
-                }
-                window.location.href = '../firstscreen/firstscreen.html'; // adjust path if needed
-            }, 4000);
-        }, false);
-    </script>
+<script>
+    window.onload = function() {
+        const logo = document.getElementById('logo');
+        // logo fade-in is handled by CSS
+        setTimeout(() => {
+            window.location.href = '../firstscreen/firstscreen.html'; // go to next screen
+        }, 4000);
+    };
+</script>
 </body>
 </html>
