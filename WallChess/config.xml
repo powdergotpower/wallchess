@@ -13,21 +13,18 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 
-    <!-- Splash screen preferences -->
+    <!-- Cordova Splash Screen preferences -->
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="4000" />
     <preference name="FadeSplashScreenDuration" value="1000" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
 
-    <!-- Splash images for different Android densities -->
-    <platform name="android">
-        <splash src="resources/splash/splash-ldpi.png" density="ldpi" />
-        <splash src="resources/splash/splash-mdpi.png" density="mdpi" />
-        <splash src="resources/splash/splash-hdpi.png" density="hdpi" />
-        <splash src="resources/splash/splash-xhdpi.png" density="xhdpi" />
-        <splash src="resources/splash/splash-xxhdpi.png" density="xxhdpi" />
-        <splash src="resources/splash/splash-xxxhdpi.png" density="xxxhdpi" />
-    </platform>
+    <!-- New Android 12+ Splash System -->
+    <preference name="AndroidWindowSplashScreen" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash/splash-xxxhdpi.png" />
+    <preference name="AndroidWindowSplashScreenBackgroundColor" value="#ffffff" />
+    <preference name="AndroidWindowSplashScreenDuration" value="4000" />
+    <preference name="AndroidWindowSplashScreenScaleType" value="CENTER_CROP" />
 
 </widget>
